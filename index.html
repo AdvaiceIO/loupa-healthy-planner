@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-Day Bridge Recipes For Selective Eaters</title>
+    <link rel="icon" href="https://loupaai.lovable.app/loupa-favicon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['"Noto Serif"', 'serif'],
+                        body: ['"Noto Serif"', 'serif'],
+                        playfair: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        primary: '#9C9283',
+                        secondary: '#F2EDE4',
+                        headingText: '#3A3A3A',
+                        bodyText: '#4B5563',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Noto Serif', serif; background: #FFFFFF; color: #4B5563; }
+        h1, h2, h3, h4 { font-family: 'Noto Serif', serif; font-weight: 700; color: #3A3A3A; }
+        .accordion-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .accordion-chevron { transition: transform 0.3s ease; }
+        .accordion-chevron.rotated { transform: rotate(90deg); }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- SECTION 1: Hero Banner -->
+    <section class="bg-white w-full">
+        <div class="max-w-[1200px] mx-auto py-12 px-6 lg:py-16 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 lg:gap-16 items-center">
+                <!-- Left Column -->
+                <div class="flex flex-col items-center lg:items-center order-1">
+                    <!-- Heading -->
+                    <h1 class="font-heading font-bold text-3xl lg:text-5xl xl:text-6xl leading-tight text-center mb-4 text-headingText order-1">
+                        End Mealtime Meltdowns in Just 21 Days
+                    </h1>
+
+                    <!-- Subheading -->
+                    <p class="text-bodyText text-base lg:text-lg font-normal leading-relaxed text-center mb-6 max-w-xl order-2" style="color:#6B7280;">
+                        A step-by-step bridge-food recipe plan made for overwhelmed moms of picky eaters ages 3–8. No more cooking separate meals. No more dinner battles.
+                    </p>
+
+                    <!-- CTA Button -->
+                    <div class="order-3 mb-6">
+                        <a href="https://advaice.io" class="inline-flex items-center gap-2 bg-primary hover:opacity-90 text-white font-semibold text-base lg:text-lg rounded-full px-8 py-3 transition">
+                            Buy Now <span>→</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust/Rating Badge -->
+                    <div class="flex items-center gap-2 mb-8 order-4">
+                        <div class="flex gap-0.5">
+                            <span class="w-5 h-5 bg-[#22C55E] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                            <span class="w-5 h-5 bg-[#22C55E] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                            <span class="w-5 h-5 bg-[#22C55E] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                            <span class="w-5 h-5 bg-[#22C55E] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                            <span class="w-5 h-5 bg-[#22C55E] flex items-center justify-center"><svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></span>
+                        </div>
+                        <span class="font-semibold text-sm lg:text-base" style="color:#3A3A3A;">Excellent 4.9</span>
+                    </div>
+
+                    <!-- Hero Image (Mobile Only) -->
+                    <div class="order-5 lg:hidden w-full flex justify-center mb-8">
+                        <div class="w-full max-w-[320px] aspect-square">
+                            <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/healthy-planner/hero-image_1776629159002.png" alt="Happy mom and child at dinner table with bridge foods" class="w-full h-full object-cover rounded-3xl">
+                        </div>
+                    </div>
+
+                    <!-- Feature Checklist -->
+                    <div class="w-full max-w-lg order-6 mb-8">
+                        <div class="flex items-start gap-3 pb-4 border-b border-dashed border-gray-300">
+                            <span class="flex-shrink-0 w-6 h-6 bg-[#22C55E] rounded-full flex items-center justify-center mt-0.5">
+                                <svg width="14" height="14" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                            </span>
+                            <p><span class="font-bold" style="color:#3A3A3A;">21 Days of Done-For-You Recipes:</span> <span style="color:#6B7280;">Every meal uses your child's safe foods as a starting point to gently introduce new flavors.</span></p>
+                        </div>
+                        <div class="flex items-start gap-3 py-4 border-b border-dashed border-gray-300">
+                            <span class="flex-shrink-0 w-6 h-6 bg-[#22C55E] rounded-full flex items-center justify-center mt-0.5">
+                                <svg width="14" height="14" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                            </span>
+                            <p><span class="font-bold" style="color:#3A3A3A;">Zero Power Struggles:</span> <span style="color:#6B7280;">The bridge-food method eliminates forcing, bribing, and tears at the dinner table.</span></p>
+                        </div>
+                        <div class="flex items-start gap-3 pt-4">
+                            <span class="flex-shrink-0 w-6 h-6 bg-[#22C55E] rounded-full flex items-center justify-center mt-0.5">
+                                <svg width="14" height="14" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                            </span>
+                            <p><span class="font-bold" style="color:#3A3A3A;">One Meal for the Whole Family:</span> <span style="color:#6B7280;">Stop cooking separate dinners. These recipes are designed so everyone eats together.</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Trust Icons Row -->
+                    <div class="flex flex-row flex-wrap lg:flex-nowrap justify-center items-center gap-4 lg:gap-6 w-full order-7">
+                        <div class="flex items-center gap-1.5">
+                            <svg width="18" height="18" fill="none" stroke="#3A3A3A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
+                            <span class="text-xs lg:text-sm font-medium" style="color:#374151;">Instant Digital Download</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <svg width="18" height="18" fill="none" stroke="#3A3A3A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 3.13-9 7s4.03 7 9 7c1.1 0 2.16-.18 3.12-.5L19 19l-1.34-3.35C19.15 14.26 21 12.28 21 10c0-3.87-4.03-7-9-7z"/></svg>
+                            <span class="text-xs lg:text-sm font-medium" style="color:#374151;">Created by a Feeding Specialist</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <svg width="18" height="18" fill="none" stroke="#3A3A3A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                            <span class="text-xs lg:text-sm font-medium" style="color:#374151;">+2,400 Happy Moms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column — Hero Image (Desktop Only) -->
+                <div class="hidden lg:flex items-center justify-center order-2">
+                    <div class="w-[530px] h-[530px] max-w-full flex-shrink-0">
+                        <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/healthy-planner/hero-image_1776629159002.png" alt="Happy mom and child at dinner table with bridge foods" class="w-full h-full object-cover rounded-3xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Bento Grid Features -->
+    <section class="bg-secondary px-6 py-12 lg:px-12 lg:py-16">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-3">
+                <!-- Cell 1 — Top Left: Text Block -->
+                <div class="bg-secondary p-8 lg:p-12 min-h-[350px] flex flex-col justify-center" style="background-color:#F0EDEA;">
+                    <h2 class="font-heading font-bold text-3xl text-headingText mb-4" style="color:#1A1A1A;">The Bridge-Food Approach</h2>
+                    <p class="font-body font-normal text-base leading-relaxed" style="color:#4A4A4A;">We start with the foods your child already trusts — nuggets, pasta, crackers — and gently build bridges to new textures and flavors without tears or tantrums.</p>
+                </div>
+
+                <!-- Cell 2 — Top Center: Text Block -->
+                <div class="p-8 lg:p-12 min-h-[350px] flex flex-col justify-center" style="background-color:#7A7265;">
+                    <h2 class="font-heading font-bold text-3xl mb-4 text-white">No More Separate Meals</h2>
+                    <p class="font-body font-normal text-base leading-relaxed" style="color:#E0E0E0;">Every recipe is designed so the whole family sits down together. One dinner, one plate, zero guilt about making something different for your child.</p>
+                </div>
+
+                <!-- Cell 3 — Right Column: Image (row-span-2) -->
+                <div class="lg:row-span-2 min-h-[300px] md:row-span-2">
+                    <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/healthy-planner/cell3_image_1776629159002.png" alt="Mom and child cooking together in a bright kitchen" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Cell 4 — Bottom Left: Image -->
+                <div class="min-h-[280px] lg:min-h-[350px]">
+                    <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/healthy-planner/cell4_image_1776629159002.png" alt="Colorful bridge food plates arranged on wooden table" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Cell 5 — Bottom Center: Text Block -->
+                <div class="p-8 lg:p-12 min-h-[350px] flex flex-col justify-center bg-primary">
+                    <h2 class="font-heading font-bold text-3xl mb-4 text-white">21 Days to Freedom</h2>
+                    <p class="font-body font-normal text-base leading-relaxed" style="color:#E8E0DA;">A complete daily roadmap that removes the guesswork. Each day builds on the last, so your child's palate expands naturally — and you finally get to breathe at dinnertime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Featured Product -->
+    <section class="w-full" style="background-color:#F2EDE4;">
+        <div class="max-w-[1280px] mx-auto py-12 px-6 lg:py-16 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-stretch">
+                <!-- Left Column — Product Image -->
+                <div class="rounded-2xl overflow-hidden relative" style="background-color:#FAF6F1;">
+                    <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/healthy-planner/product-image_1776629159002.png" alt="21-Day Bridge Recipes book on kitchen counter" class="w-full h-full object-cover min-h-[400px]">
+                    <!-- Badge -->
+                    <div class="absolute top-4 left-4 border border-primary text-primary px-3 py-1 text-xs uppercase tracking-wider font-semibold rounded-full bg-white/80">
+                        Best Seller
+                    </div>
+                    <!-- Promo Circle -->
+                    <div class="absolute left-4 top-1/2 -translate-y-1/2 w-[120px] h-[120px] rounded-full bg-headingText flex flex-col items-center justify-center text-white">
+                        <span class="text-sm font-normal">Save</span>
+                        <span class="text-2xl font-bold font-heading">$10</span>
+                    </div>
+                </div>
+
+                <!-- Right Column — Product Info -->
+                <div class="flex flex-col justify-center">
+                    <!-- Rating -->
+                    <div class="flex items-center gap-2 text-sm" style="color:#374151;">
+                        <div class="flex gap-0.5">
+                            <span class="text-primary">★</span><span class="text-primary">★</span><span class="text-primary">★</span><span class="text-primary">★</span><span class="text-primary">★</span>
+                        </div>
+                        <span>4.8 / 5</span>
+                        <span class="text-primary">•</span>
+                        <span>Loved by 2,400+ moms</span>
+                    </div>
+
+                    <!-- Title -->
+                    <h2 class="font-heading font-bold text-2xl lg:text-[32px] text-headingText mt-3 leading-tight">
+                        21-Day Bridge Recipes For Selective Eaters
+                    </h2>
+
+                    <!-- Price -->
+                    <div class="mt-3 flex items-center gap-3">
+                        <span class="text-[22px] font-bold text-headingText">$23.95</span>
+                        <span class="text-lg line-through" style="color:#9CA3AF;">$33.95</span>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mt-5 space-y-3">
+                        <p class="text-base leading-relaxed" style="color:#4B5563;">
+                            Your child lives on nuggets, plain pasta, and crackers. You've tried everything — hiding veggies, begging, bribing with dessert. Nothing works, and every dinner ends in tears (yours or theirs).
+                        </p>
+                        <p class="text-base leading-relaxed" style="color:#4B5563;">
+                            This 21-day guided plan uses a proven "bridge food" method to gently expand what your picky eater will accept — starting from the exact foods they already trust, with zero power struggles or separate cooking.
+                        </p>
+                    </div>
+
+                    <!-- Benefits Intro -->
+                    <p class="mt-5 text-[15px]" style="color:#6B7280;">After 21 days, moms report:</p>
+
+                    <!-- Benefits List -->
+                    <div class="mt-4 space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="flex-shrink-0 w-10 text-center text-xl" style="color:#3A3A3A;">🍽️</span>
+                            <p class="text-[15px]" style="color:#374151;">Kids trying <span class="font-semibold">3–5 new foods</span> they previously refused completely</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="flex-shrink-0 w-10 text-center text-xl" style="color:#3A3A3A;">😌</span>
+                            <p class="text-[15px]" style="color:#374151;"><span class="font-semibold">Calmer dinnertime atmosphere</span> with significantly fewer meltdowns and refusals</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="flex-shrink-0 w-10 text-center text-xl" style="color:#3A3A3A;">👨‍👩‍👧</span>
+                            <p class="text-[15px]" style="color:#374151;"><span class="font-semibold">One meal for the whole family</span> — no more cooking two or three different dinners each night</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="flex-shrink-0 w-10 text-center text-xl" style="color:#3A3A3A;">💪</span>
+                            <p class="text-[15px]" style="color:#374151;">Renewed <span class="font-semibold">confidence as a mom</span> knowing you have a clear, expert-backed daily plan</p>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <a href="https://advaice.io" class="mt-6 block w-full text-center bg-primary hover:opacity-90 text-white font-semibold uppercase tracking-wider text-base rounded-full py-4 px-8 transition duration-200">
+                        Buy Now — $23.95
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Step by Step -->
+    <section class="bg-white w-full">
+        <div class="max-w-[1400px] mx-auto py-12 px-5 lg:py-20 lg:px-10">
+            <!-- Header -->
+            <div class="text-center">
+                <p class="font-body font-normal text-sm lg:text-base tracking-wide mb-2 text-primary">How It Works</p>
+                <h2 class="font-playfair font-normal text-4xl lg:text-5xl xl:text-[64px] text-headingText leading-tight mb-8 lg:mb-12">Step by Step</h2>
+            </div>
+
+            <!-- 3-Column Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-4">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/healthy-planner/step_1_image_1776629159002.png" alt="Mom reviewing the 21-day meal plan at kitchen table" class="w-full aspect-[3/4] object-cover">
+                    <span class="font-playfair font-normal text-4xl lg:text-5xl text-primary mt-6 mb-3">1</span>
+                    <p class="font-body font-normal text-[15px] lg:text-base leading-relaxed max-w-[360px] mx-auto" style="color:#4A4A4A;">Pick up the planner and read the simple daily guide. Each day tells you exactly what to cook and how to present it using your child's safe foods as the starting point.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/healthy-planner/step_2_image_1776629159002.png" alt="Mom cooking bridge recipe while child watches curiously" class="w-full aspect-[3/4] object-cover">
+                    <span class="font-playfair font-normal text-4xl lg:text-5xl text-primary mt-6 mb-3">2</span>
+                    <p class="font-body font-normal text-[15px] lg:text-base leading-relaxed max-w-[360px] mx-auto" style="color:#4A4A4A;">Follow the bridge recipe for the day. Each recipe blends familiar flavors with a tiny new element — so subtle your child won't resist, but meaningful enough to expand their palate.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/healthy-planner/step_3_image_1776629159002.png" alt="Happy family eating the same meal together at dinner" class="w-full aspect-[3/4] object-cover">
+                    <span class="font-playfair font-normal text-4xl lg:text-5xl text-primary mt-6 mb-3">3</span>
+                    <p class="font-body font-normal text-[15px] lg:text-base leading-relaxed max-w-[360px] mx-auto" style="color:#4A4A4A;">Serve the same meal to everyone. Watch as your child becomes more open, dinner becomes calmer, and you reclaim your evenings — one peaceful meal at a time.</p>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-10 lg:mt-12">
+                <a href="https://advaice.io" class="inline-flex items-center gap-2.5 bg-secondary hover:opacity-80 font-body font-semibold text-xs lg:text-sm uppercase tracking-[1.5px] px-8 py-3.5 transition-colors duration-300" style="color:#3A3A3A;">
+                    GET YOUR PLANNER <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FAQ Accordion -->
+    <section class="bg-secondary py-16 px-4 lg:py-20 lg:px-10">
+        <div class="max-w-[1200px] mx-auto">
+            <!-- Heading -->
+            <h2 class="font-heading font-bold text-3xl md:text-4xl lg:text-5xl text-center text-headingText mb-10 lg:mb-12">
+                Frequently Asked Questions
+            </h2>
+
+            <!-- Accordion -->
+            <div class="space-y-4 lg:space-y-5" id="faq-accordion">
+                <!-- Item 1 -->
+                <div class="faq-item">
+                    <button onclick="toggleFAQ(this)" aria-expanded="false" class="w-full h-[55px] md:h-[60px] lg:h-[68px] flex items-center justify-between px-6 lg:px-8 cursor-pointer rounded-xl transition-all duration-200 bg-primary hover:opacity-90">
+                        <span class="font-bold text-sm md:text-base lg:text-lg text-white text-left">My child literally eats only 5 foods. Will this actually work?</span>
+                        <span class="accordion-chevron text-white text-2xl lg:text-3xl flex-shrink-0 ml-4">›</span>
+                    </button>
+                    <div class="accordion-answer bg-white px-6 lg:px-8 rounded-b-xl">
+                        <div class="py-5 text-base leading-relaxed" style="color:#333333;">
+                            Yes — this plan was specifically designed for children who eat only a handful of "safe" foods like nuggets, plain pasta, crackers, and yogurt. Unlike general kid cookbooks, every single recipe starts from foods your child already accepts and gently introduces micro-changes. We're not asking your child to eat broccoli tomorrow. We're asking them to try pasta with a slightly different sauce texture. That's the bridge-food method, and it works even for the most selective eaters.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="faq-item">
+                    <button onclick="toggleFAQ(this)" aria-expanded="false" class="w-full h-[55px] md:h-[60px] lg:h-[68px] flex items-center justify-between px-6 lg:px-8 cursor-pointer rounded-xl transition-all duration-200 bg-primary hover:opacity-90">
+                        <span class="font-bold text-sm md:text-base lg:text-lg text-white text-left">I'm already so exhausted. Are the recipes complicated?</span>
+                        <span class="accordion-chevron text-white text-2xl lg:text-3xl flex-shrink-0 ml-4">›</span>
+                    </button>
+                    <div class="accordion-answer bg-white px-6 lg:px-8 rounded-b-xl">
+                        <div class="py-5 text-base leading-relaxed" style="color:#333333;">
+                            Not at all. Every recipe is designed for tired, busy moms. Most take under 25 minutes, use common pantry ingredients, and require zero fancy cooking skills. The whole point is to make your life easier — not add another complicated task to your plate. Each day includes a clear, simple instruction with no guesswork.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="faq-item">
+                    <button onclick="toggleFAQ(this)" aria-expanded="false" class="w-full h-[55px] md:h-[60px] lg:h-[68px] flex items-center justify-between px-6 lg:px-8 cursor-pointer rounded-xl transition-all duration-200 bg-primary hover:opacity-90">
+                        <span class="font-bold text-sm md:text-base lg:text-lg text-white text-left">How is this different from other picky eater cookbooks?</span>
+                        <span class="accordion-chevron text-white text-2xl lg:text-3xl flex-shrink-0 ml-4">›</span>
+                    </button>
+                    <div class="accordion-answer bg-white px-6 lg:px-8 rounded-b-xl">
+                        <div class="py-5 text-base leading-relaxed" style="color:#333333;">
+                            Most picky eater cookbooks give you recipes that assume your child will try new things — they just don't eat them. This plan is built entirely on the "bridge food" concept: we take the exact foods your child already eats and create tiny, non-threatening bridges to new flavors and textures. Plus, it's a 21-day guided program with a daily structure, not just a random collection of recipes. You always know exactly what to do next.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="faq-item">
+                    <button onclick="toggleFAQ(this)" aria-expanded="false" class="w-full h-[55px] md:h-[60px] lg:h-[68px] flex items-center justify-between px-6 lg:px-8 cursor-pointer rounded-xl transition-all duration-200 bg-primary hover:opacity-90">
+                        <span class="font-bold text-sm md:text-base lg:text-lg text-white text-left">What format is the product? How do I access it?</span>
+                        <span class="accordion-chevron text-white text-2xl lg:text-3xl flex-shrink-0 ml-4">›</span>
+                    </button>
+                    <div class="accordion-answer bg-white px-6 lg:px-8 rounded-b-xl">
+                        <div class="py-5 text-base leading-relaxed" style="color:#333333;">
+                            This is a digital product — you'll receive instant access to download the full 21-day planner immediately after purchase. You can view it on your phone, tablet, or computer, or print it out and keep it on your kitchen counter. No waiting for shipping, no physical book to lose. Start tonight if you want!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Product Benefits -->
+    <section class="bg-white w-full">
+        <div class="max-w-[1400px] mx-auto py-12 px-5 lg:py-16 lg:px-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <!-- Left Column -->
+                <div>
+                    <h2 class="font-heading font-bold text-3xl md:text-4xl lg:text-5xl text-headingText leading-tight mb-10 lg:mb-12">
+                        Benefits of the 21-Day Plan
+                    </h2>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                        <!-- Benefit 1 -->
+                        <div>
+                            <div class="mb-4">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#9C9283" stroke-width="1.5">
+                                    <circle cx="24" cy="24" r="20"/>
+                                    <path d="M24 12c-4 0-8 4-8 10s4 14 8 14 8-8 8-14-4-10-8-10z"/>
+                                    <path d="M24 12v26"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-headingText mb-3">Expanded Palate</h3>
+                            <p class="text-base font-normal leading-relaxed" style="color:#333333;">Your child starts accepting new foods naturally through bridge recipes that build on flavors they already love and trust.</p>
+                        </div>
+
+                        <!-- Benefit 2 -->
+                        <div>
+                            <div class="mb-4">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#9C9283" stroke-width="1.5">
+                                    <circle cx="24" cy="24" r="6"/>
+                                    <circle cx="24" cy="8" r="3"/><line x1="24" y1="11" x2="24" y2="18"/>
+                                    <circle cx="24" cy="40" r="3"/><line x1="24" y1="30" x2="24" y2="37"/>
+                                    <circle cx="10" cy="16" r="3"/><line x1="12.5" y1="18" x2="19" y2="21"/>
+                                    <circle cx="38" cy="16" r="3"/><line x1="35.5" y1="18" x2="29" y2="21"/>
+                                    <circle cx="10" cy="32" r="3"/><line x1="12.5" y1="30" x2="19" y2="27"/>
+                                    <circle cx="38" cy="32" r="3"/><line x1="35.5" y1="30" x2="29" y2="27"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-headingText mb-3">Stress-Free Dinners</h3>
+                            <p class="text-base font-normal leading-relaxed" style="color:#333333;">The structured daily plan eliminates guesswork and decision fatigue, so you approach each meal with calm confidence instead of dread.</p>
+                        </div>
+
+                        <!-- Benefit 3 -->
+                        <div>
+                            <div class="mb-4">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#9C9283" stroke-width="1.5">
+                                    <path d="M8 16h32"/><path d="M8 22h32"/><path d="M8 28h32"/><path d="M8 34h32"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-headingText mb-3">One Meal for Everyone</h3>
+                            <p class="text-base font-normal leading-relaxed" style="color:#333333;">Stop being a short-order cook. Every recipe is designed so parents and kids eat the same dinner — saving you time, energy, and sanity.</p>
+                        </div>
+
+                        <!-- Benefit 4 -->
+                        <div>
+                            <div class="mb-4">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#9C9283" stroke-width="1.5">
+                                    <path d="M16 8a16 16 0 0 1 16 16" stroke-linecap="round"/>
+                                    <path d="M32 8l0 8-8 0"/>
+                                    <path d="M32 40a16 16 0 0 1-16-16" stroke-linecap="round"/>
+                                    <path d="M16 40l0-8 8 0"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-headingText mb-3">Rebuild Mealtime Joy</h3>
+                            <p class="text-base font-normal leading-relaxed" style="color:#333333;">Replace power struggles and tears with curiosity and connection. The low-conflict approach lets your family actually enjoy being together at the table again.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column — Lifestyle Image -->
+                <div class="w-full">
+                    <img src="https://nyrslifytgbluamxpqzq.supabase.co/storage/v1/object/public/website-images/healthy-planner/benefits-lifestyle_1776629159002.png" alt="Happy mom and child enjoying dinner together" class="w-full h-full min-h-[400px] lg:min-h-[500px] object-cover rounded-2xl" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: Testimonials -->
+    <section class="bg-secondary w-full">
+        <div class="max-w-[1200px] mx-auto py-10 px-5 lg:py-20 lg:px-6">
+            <!-- Heading -->
+            <h2 class="font-heading font-bold text-[28px] lg:text-[40px] text-center text-headingText mb-12">
+                What Moms Are Saying
+            </h2>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white border-2 border-headingText px-8 py-10 text-center flex flex-col items-center h-full">
+                    <div class="text-xl mb-5 text-headingText">★★★★★</div>
+                    <p class="text-base lg:text-lg font-normal leading-relaxed text-headingText mb-6 flex-1">
+                        "My son has eaten nothing but chicken nuggets and buttered noodles for TWO YEARS. By day 9, he tried a new pasta sauce without crying. I literally teared up at the dinner table."
+                    </p>
+                    <p class="font-bold text-base text-headingText mb-1">Sarah M.</p>
+                    <p class="text-sm font-normal" style="color:#666666;">Mom of a 4-year-old</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border-2 border-headingText px-8 py-10 text-center flex flex-col items-center h-full">
+                    <div class="text-xl mb-5 text-headingText">★★★★★</div>
+                    <p class="text-base lg:text-lg font-normal leading-relaxed text-headingText mb-6 flex-1">
+                        "I was skeptical because we've tried EVERYTHING. But the bridge food approach just makes sense. My daughter doesn't feel pressured and she's actually curious about food now. Game changer."
+                    </p>
+                    <p class="font-bold text-base text-headingText mb-1">Jessica R.</p>
+                    <p class="text-sm font-normal" style="color:#666666;">Mom of a 6-year-old</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border-2 border-headingText px-8 py-10 text-center flex flex-col items-center h-full">
+                    <div class="text-xl mb-5 text-headingText">★★★★★</div>
+                    <p class="text-base lg:text-lg font-normal leading-relaxed text-headingText mb-6 flex-1">
+                        "The best $24 I've ever spent. I'm no longer making 3 separate dinners. My kids eat what we eat now — or at least a version of it. Our evenings are completely transformed."
+                    </p>
+                    <p class="font-bold text-base text-headingText mb-1">Amanda K.</p>
+                    <p class="text-sm font-normal" style="color:#666666;">Mom of twins, age 5</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white border-2 border-headingText px-8 py-10 text-center flex flex-col items-center h-full">
+                    <div class="text-xl mb-5 text-headingText">★★★★★</div>
+                    <p class="text-base lg:text-lg font-normal leading-relaxed text-headingText mb-6 flex-1">
+                        "I was so burned out from fighting at every meal. This plan removed the stress completely. The recipes are so simple and my 7-year-old doesn't even realize he's eating new things."
+                    </p>
+                    <p class="font-bold text-base text-headingText mb-1">Danielle P.</p>
+                    <p class="text-sm font-normal" style="color:#666666;">Mom of a 7-year-old</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white border-2 border-headingText px-8 py-10 text-center flex flex-col items-center h-full">
+                    <div class="text-xl mb-5 text-headingText">★★★★★</div>
+                    <p class="text-base lg:text-lg font-normal leading-relaxed text-headingText mb-6 flex-1">
+                        "Our feeding therapist actually recommended this approach. Having it laid out day-by-day in a planner made it doable for our family. My daughter ate sweet potato for the first time ever on day 14!"
+                    </p>
+                    <p class="font-bold text-base text-headingText mb-1">Christina L.</p>
+                    <p class="text-sm font-normal" style="color:#666666;">Mom of a 3-year-old</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white border-2 border-headingText px-8 py-10 text-center flex flex-col items-center h-full">
+                    <div class="text-xl mb-5 text-headingText">★★★★★</div>
+                    <p class="text-base lg:text-lg font-normal leading-relaxed text-headingText mb-6 flex-1">
+                        "I cried reading this because someone finally understood what I was going through. It's not just recipes — it's a lifeline for moms who feel like failures at feeding their kids. You are NOT alone."
+                    </p>
+                    <p class="font-bold text-base text-headingText mb-1">Michelle T.</p>
+                    <p class="text-sm font-normal" style="color:#666666;">Mom of an 8-year-old</p>
+                </div>
+            </div>
+
+            <!-- Pagination Dots -->
+            <div class="flex justify-center items-center gap-2 mt-10">
+                <span class="w-[10px] h-[10px] rounded-full bg-headingText"></span>
+                <span class="w-[10px] h-[10px] rounded-full" style="background:#CCCCCC;"></span>
+                <span class="w-[10px] h-[10px] rounded-full" style="background:#CCCCCC;"></span>
+                <span class="w-[10px] h-[10px] rounded-full" style="background:#CCCCCC;"></span>
+                <span class="w-[10px] h-[10px] rounded-full" style="background:#CCCCCC;"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion JavaScript -->
+    <script>
+        function toggleFAQ(button) {
+            const faqItem = button.parentElement;
+            const answer = faqItem.querySelector('.accordion-answer');
+            const chevron = button.querySelector('.accordion-chevron');
+            const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+            // Close all other items
+            document.querySelectorAll('.faq-item').forEach(function(item) {
+                const otherAnswer = item.querySelector('.accordion-answer');
+                const otherChevron = item.querySelector('.accordion-chevron');
+                const otherButton = item.querySelector('button');
+                if (item !== faqItem) {
+                    otherAnswer.style.maxHeight = '0px';
+                    otherChevron.classList.remove('rotated');
+                    otherButton.setAttribute('aria-expanded', 'false');
+                    otherButton.classList.add('rounded-xl');
+                    otherButton.classList.remove('rounded-t-xl');
+                }
+            });
+
+            if (isOpen) {
+                answer.style.maxHeight = '0px';
+                chevron.classList.remove('rotated');
+                button.setAttribute('aria-expanded', 'false');
+                button.classList.remove('rounded-t-xl');
+                button.classList.add('rounded-xl');
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                chevron.classList.add('rotated');
+                button.setAttribute('aria-expanded', 'true');
+                button.classList.remove('rounded-xl');
+                button.classList.add('rounded-t-xl');
+            }
+        }
+    </script>
+</body>
+</html>
